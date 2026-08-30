@@ -1,0 +1,26 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "business-card-cloud",
+  "main": "./worker/index.ts",
+  "compatibility_date": "2026-07-02",
+  "assets": {
+    "directory": "./dist/client",
+    "binding": "ASSETS"
+  },
+  "vars": {
+    "GOOGLE_WORK_LABEL": "工作聯絡人"
+  },
+  "r2_buckets": [
+    {
+      "binding": "CARD_IMAGES",
+      "bucket_name": "business-card-images"
+    }
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "business-card-cloud",
+      "database_id": "00000000-0000-0000-0000-000000000000"
+    }
+  ]
+}

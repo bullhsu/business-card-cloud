@@ -1,0 +1,15 @@
+alter table cards add column name_zh text not null default '';
+alter table cards add column name_en text not null default '';
+alter table cards add column company_zh text not null default '';
+alter table cards add column company_en text not null default '';
+alter table cards add column title_zh text not null default '';
+alter table cards add column title_en text not null default '';
+alter table cards add column mobile text not null default '';
+alter table cards add column fax text not null default '';
+alter table cards add column address_zh text not null default '';
+alter table cards add column address_en text not null default '';
+alter table cards add column ai_model text not null default '';
+alter table cards add column ai_raw_text text not null default '';
+alter table cards add column ai_json text not null default '';
+alter table cards add column ai_confidence real;
+alter table cards add column ai_updated_at text;
